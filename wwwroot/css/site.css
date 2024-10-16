@@ -1,0 +1,65 @@
+/* Reset the margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex; /* Use flexbox for alignment */
+    height: 100vh; /* Full viewport height */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    background-color: #282c34; /* Background color */
+    color: white; /* Text color */
+    font-family: 'Arial', sans-serif; /* Font style */
+}
+
+.container {
+    text-align: center; /* Center content in container */
+}
+
+.clock {
+    position: relative; /* Position relative for child elements */
+    width: 200px; /* Clock width */
+    height: 200px; /* Clock height */
+    border: 10px solid white; /* Clock border */
+    border-radius: 50%; /* Make it circular */
+    margin-bottom: 20px; /* Space between clock and time display */
+}
+
+.hand {
+    position: absolute; /* Absolute positioning for rotation */
+    background: white; /* Hand color */
+    border-radius: 10px; /* Rounded edges */
+    transform-origin: bottom center; /* Pivot point for rotation */
+}
+
+.hour {
+    width: 6px; /* Hour hand width */
+    height: 50px; /* Hour hand length */
+    bottom: 50%; /* Position from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for center */
+}
+
+.minute {
+    width: 4px; /* Minute hand width */
+    height: 70px; /* Minute hand length */
+    bottom: 50%; /* Position from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for center */
+}
+
+.second {
+    width: 2px; /* Second hand width */
+    height: 90px; /* Second hand length */
+    bottom: 50%; /* Position from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for center */
+}
+
+#time {
+    font-size: 18px; /* Adjust font size */
+    margin-top: 10px; /* Space between clock and time text */
+}

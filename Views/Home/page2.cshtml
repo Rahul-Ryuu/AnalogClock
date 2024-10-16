@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Hello World Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hello World!</h1>
+        <button class="nav-button" onclick="location.href='@Url.Action("Index", "Home")'">Back to Clock</button>
+    </div>
+</body>
+</html>
